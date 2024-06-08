@@ -1,6 +1,6 @@
 
 const asynchandler = require("express-async-handler")
-const {Order} = require("../model/Order.js")
+const Order = require("../model/Order.js")
 
 const getthedata = asynchandler(async(req,res)=>{
     const ord = await Order.find()
