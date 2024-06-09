@@ -5,6 +5,6 @@ const {getthedata,resrverdata,updatedata,deletedata} = require("../controller/or
 
 router.post("/sendorder",resrverdata)
 router.get("/getorder",getthedata)
-router.put("/:id",updatedata)
-router.delete("/:id",deletedata)
+router.put("/updataorder/:id",updatedata)
+router.delete("/deleteorder/:id",deletedata)
 module.exports = router
