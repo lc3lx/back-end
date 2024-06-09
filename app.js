@@ -15,7 +15,7 @@ app.use(cors({
 }))
 
 //cerate srever 
-app.listen(process.env.port || 5000, ()=>{
+app.listen(4000, ()=>{
     console.log("sever is ruing in port 5000")
 })
 
