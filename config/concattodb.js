@@ -11,6 +11,5 @@ async function concatdb ()
 }}
 
 
-module.exports = {
-    concatdb
-}
+module.exports = concatdb
+
