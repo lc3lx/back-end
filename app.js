@@ -1,7 +1,7 @@
 const express = require("express")
 const cors = require('cors')
 
-const {concatdb} = require("./config/concattodb")
+const concatdb = require("./config/concattodb")
 const app = express()
 
 require("dotenv").config()
