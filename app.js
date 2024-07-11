@@ -8,11 +8,12 @@ require("dotenv").config()
 
 //concatin to database
 concatdb()
-app.use(express.json())
-app.use("/api/order",require("./router/order"))
 app.use(cors({
     origin:"*"
 }))
+app.use(express.json())
+app.use("/api/order",require("./router/order"))
+
 
 //cerate srever 
 const port = process.env.PORT || 4000
