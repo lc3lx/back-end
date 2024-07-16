@@ -23,7 +23,7 @@ const recyclbinschema = new mongoose.Schema(
     },
     timeofserves :{
         type:String ,
-        required: true
+        
     }
 
 
