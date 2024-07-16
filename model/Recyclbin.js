@@ -21,10 +21,7 @@ const recyclbinschema = new mongoose.Schema(
         required : true ,
         
     },
-    timeofserves :{
-        type:String ,
-        
-    }
+    
 
 
 
