@@ -11,7 +11,7 @@ const resrverdata = asynchandler(async(req,res)=>{
         customarname : req.body.customarname,
         customarphone : req.body.customarphone,
         locationCar :req.body.locationCar,
-        timeofserves:req.body.timeofserves
+        
     })
     const ruesult = await recyclbin.save()
     res.status(201).json(ruesult)
