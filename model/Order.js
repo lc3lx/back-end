@@ -25,6 +25,10 @@ const orderschema = new mongoose.Schema(
         type:String ,
         required: true
 
+    },
+    local:{
+        type:String,
+        required:true
     }
 
 
