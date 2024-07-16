@@ -13,6 +13,7 @@ app.use(cors({
 }))
 app.use(express.json())
 app.use("/api/order",require("./router/order"))
+app.use("/api/recyclbin",require("./router/recyclbin"))
 
 
 //cerate srever 
