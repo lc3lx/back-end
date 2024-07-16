@@ -13,7 +13,9 @@ const resrverdata = asynchandler(async(req,res)=>{
         customarname : req.body.customarname,
         customarphone : req.body.customarphone,
         locationCar :req.body.locationCar,
-        timeofserves:req.body.timeofserves
+        timeofserves:req.body.timeofserves,
+        
+        local :req.body.local
     })
     const ruesult = await order.save()
     res.status(201).json(ruesult)
@@ -27,7 +29,8 @@ const updatedata = asynchandler(async(req,res)=>{
             customarname : req.body.customarname,
             customarphone : req.body.customarphone,
             locationCar :req.body.locationCar,
-            timeofserves:req.body.timeofserves}
+            timeofserves:req.body.timeofserves,
+        local :req.body.local}
     },{new:true})
     res.status(200).json(order)
 }else{
