@@ -18,4 +18,4 @@ const resrverdata = asynchandler(async(req,res)=>{
 })
 module.exports ={
     getthedata,
-    resrverdata,}
+    resrverdata}
